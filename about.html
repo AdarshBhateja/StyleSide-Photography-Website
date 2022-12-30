@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html"><img src="./assets/logo.png" alt=""></a>
+        </div>
+        <div class="nav-right">
+          <div class="nav-right-one">
+            <ul>
+              <li><a href="#">Commercial</a></li>
+              <li><a href="#">Beauty</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="nav-right-two">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="nav-right-three">
+            <button class="quote-y-p">QUOTE YOUR PROJECT</button>
+          </div> 
+        </div>
+
+        <!-- mobile nav -->
+        <div id="hamburger" onclick="toggleMobileMenu(this)">
+          <div class=" bar bar1"></div>
+          <div class="bar bar2"></div>
+          <ul class="mobile-menu">
+            <li><a href="#">Commercial</a></li>
+              <li><a href="#">Beauty</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><button class="quote-y-p">QUOTE YOUR PROJECT</button></li>
+          </ul>
+        </div>
+    </nav>
+    <script src="index.js"></script>
+    
+
+    <!-- about us content -->
+    <section class="about">
+        <div class="about-col">
+            <div class="image-container">
+                <img src="./assets/about image/54480d8c0077f27f2a0f05f997683aa9.jpg" alt="">
+            </div>
+            <div class="about-description">
+                <h1>My name is Sukhpreet Singh. </h1>
+                <p>I am a commercial photographer and art director based in New Delhi. <br><br>
+
+                    I help brands and individuals stand out in the marketplace through bespoke imagery. <br><br>
+                    
+                    My love for photography began when I was in school at a very young age. <br><br>
+                    
+                    I did not have many friends, as I didn’t speak a word of English at first. My first camera <br><br>
+                    
+                    was a way I made friends. I fell in love with the process and the result, creating many <br><br>
+                    
+                    connections along the way (even with my broken English). To this day, cultivating warm <br><br>
+                    
+                    client relationships, delivering work that is consistent and unique to each client, remains my philosophy.  </p>
+            </div>    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Follow</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic incidunt accusamus quidem itaque vel ex, pariatur dolore <br> maiores, dicta repellendus, dolorum ullam</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i> 
+        </div>
+        <p>Made by <i class="fa-solid fa-bolt"></i> Adarsh Bhateja </p>
+    </section>
+</body>
+</html>
