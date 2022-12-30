@@ -1,3 +1,9 @@
+/**
+ * SiteName: Styleside_shoots 
+ *
+ * @author Adarsh Bhateja | adarshbhateja@Outlook.com
+ */
+
 *{
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -339,13 +345,58 @@ li{
     
 }
 
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer-follow-insta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-follow-insta-container a{
+    text-decoration: none;
+}
+
+.footer-follow-insta-container a:hover{
+    color:#474747e3 ;
+}
+
+.copyright-developer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.copyright, .developer-name{
+    font-family: 'Kanit', sans-serif;
+    font-size: 10px;
+}
+
+/* media Query about page */
 @media only screen and (max-width: 800px){
     .image-container{
         max-width: 85%;
+        color: #474747e3;
     }
 
     .about-description h1{
         font-size: 13px;
+        color: #474747e3;
     }
 }
 
