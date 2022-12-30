@@ -315,7 +315,6 @@ li{
 .about-col{
     display: flex;
     flex-direction: column;
-    flex-basis: 48%;
     padding: 30px 2px;
     align-items: center;
     /* background-color: yellow; */
@@ -324,9 +323,14 @@ li{
 .image-container{
     width: 500px;
     aspect-ratio: 1 / 1;
-    /* background-color: black; */
     overflow: hidden;
     border-radius: 50%;
+    background-color: #000;
+    position: relative;
+}
+
+.image-container img{
+    width: 100%;
 }
 
 .about-description h1{
@@ -391,7 +395,6 @@ li{
 @media only screen and (max-width: 800px){
     .image-container{
         max-width: 85%;
-        color: #474747e3;
     }
 
     .about-description h1{
