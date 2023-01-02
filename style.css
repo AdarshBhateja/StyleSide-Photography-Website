@@ -17,10 +17,6 @@ body{
     padding: 0 10px;
 }
 
-header{
-    height: 100vh;
-}
-
 /* Nav */
 nav{
     width: 100%;
@@ -29,19 +25,22 @@ nav{
     padding: 15px 10%;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0px;
     z-index: 5;
+    margin: auto;
     background-color: white;
 }
 
 .nav-left{
     margin-right: 30px;
+    min-width: 250px;
+    max-width: 250px;
+    /* background-color: yellowgreen; */
 }
 
 .nav-left img{
-    width: 10rem;
-    scale: 1.5;
+    width: 100%;
 }
 
 .nav-right{
@@ -49,8 +48,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-basis: 65%;
-    /* background-color: aqua; */
-    /* flex-wrap: wrap; */
 }
 
 .nav-right-one{
@@ -137,6 +134,23 @@ li{
     background-color: #242b2eea;
     color: rgb(230, 228, 228);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 701px){
+    nav{
+        padding: 10% 5%;
+    }
+    .nav-right-one ul{
+        flex-wrap: wrap;
+    }
+    .nav-left{
+        max-width: 200px;
+        min-width: 200px;
+    }
+    .quote-y-p{
+        padding: 10px 14px;
+        white-space: normal;
+    }
 }
 
 
