@@ -36,12 +36,12 @@ nav{
 }
 
 .nav-left{
-    /* background-color: #BE9A64;  */
     margin-right: 30px;
 }
 
 .nav-left img{
     width: 10rem;
+    scale: 1.5;
 }
 
 .nav-right{
@@ -63,8 +63,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    /* flex-wrap: wrap; */
-    /* background-color: plum; */
 }
 
 li{
@@ -245,6 +243,197 @@ li{
     }
 }
 
+/* categories */
+
+.categories{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.quote{
+    min-width: 600px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ced1d1;
+    border-left-width: 10px;
+}
+
+
+
+.quote-text{
+    font-family: 'Gelasio', serif;
+    font-style: italic;
+    font-size: 1.7em;
+    line-height: 1.2;
+    margin: 0;
+    color: #000;
+}
+
+.quote-text:not(:last-child){
+    margin-bottom: 2%;
+}
+
+.quote-quoted::before{
+    content: "\201c";
+    font-size: 70px;
+}
+
+.quote-credits{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size: 1.2em !important;
+    color:#BE9A64 !important;
+}
+
+.quote-credits::before{
+    content: "\2014\0020";
+}
+
+@media(max-width: 700px){
+    .quote{
+        min-width: 100%;
+        padding: 10px;
+    }
+    .quote-quoted::before{
+        font-size: 50px;
+    }
+    .quote-text{
+        font-size: 1.2em;
+        line-height: normal;
+    }
+    .quote-text:not(:last-child){
+        margin-bottom: 5%;
+    }
+    .quote-credits{
+        font-size: .8em !important;
+    }
+}
+
+.categories h1{
+    margin-top: 7vh;
+    font-size: 36px;
+    font-weight: 600;
+    color: #242B2E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.categories p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #555;
+}
+
+@media(max-width: 700px){
+    .categories h1{
+        font-size: 25px;
+    } 
+    .categories p{
+        font-size: 15px;
+    }
+}
+
+/* categories-flex */
+.row{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: all .5s;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.2), inset 0 0 0 1000px rgba(83, 83, 83, 0.6);
+    margin: auto;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.gallery-col1{
+    background: url("./assets/Slider homepage photos/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-col2{
+    background: url("./assets/Slider homepage photos/20.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-col3{
+    background: url("./assets/Slider homepage photos/14.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-col4{
+    background: url("./assets/Slider homepage photos/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-col5{
+    background: url("./assets/Slider homepage photos/10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-col6{
+    background: url("./assets/Slider homepage photos/12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-col div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 25%;
+    width: min-content;
+
+}
+
+.gallery-col div hr{
+    width: 120%;
+    height: 2px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery-col div h3{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gallery-col:hover{
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2), inset 0 0 0 1000px rgba(83, 83, 83, 0.6);
+    scale: 1.02;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
 /* contact page */
 .location{
     width: 80%;
@@ -309,7 +498,6 @@ li{
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    /* background-color: #BE9A64; */
 }
 
 .about-col{
@@ -317,7 +505,6 @@ li{
     flex-direction: column;
     padding: 30px 2px;
     align-items: center;
-    /* background-color: yellow; */
 }
 
 .image-container{
