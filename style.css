@@ -138,7 +138,7 @@ li{
 
 @media only screen and (max-width: 1000px) and (min-width: 701px){
     nav{
-        padding: 10% 5%;
+        padding: 5% 5%;
     }
     .nav-right-one ul{
         flex-wrap: wrap;
@@ -248,7 +248,7 @@ li{
 }
 
 /* header media query */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 850px){
     .nav-right{
         display: none;
     } 
