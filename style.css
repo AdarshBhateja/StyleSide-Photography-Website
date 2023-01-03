@@ -155,27 +155,60 @@ li{
 
 
 
-/* image slider swiperjs */
-.swiper{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
-
-.swiper-slide{
-    background-position: center;
-    background-size: cover;
-    width: 500px;
-    height: 700px;
-    box-shadow: 0 10px 10px grey;
-}
-
-.swiper-slide img{
-    display: block;
-    width: 100%;
-    height: min-content;
+/* image slider */
+.slider{
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    /* width: 90%; */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    /* background-color: black; */
+  }
+  
+  
+  .slide-track{
+    display: flex;
+    /* width: calc(250px * 18); */
+    animation: scroll 30s linear infinite;
+    /* background-color: darkgray; */
+  }
+  
+  .slide{
+    height: 70vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    perspective: 100px;
+    /* background-color: red; */
+  }
+  
+  .slide img{
+    /* width: 100%; */
     height: 100%;
-}
+    transition: transform .5s;
+  }
+  
+  .slide img:hover{
+    transform: translateZ(10px);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      /* transform: translateX(calc(-250px * 9)); */
+      transform: translateX(calc(-50%));
+    }
+  }
+  
+  .slide-track:hover{
+    animation-play-state: paused;
+  }
 
 /* mobile nav */
 #hamburger{

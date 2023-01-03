@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StyleSide Photography</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -58,105 +57,67 @@
         </nav>
         <script src="index.js"></script>
         
-        <!-- image slider swiperjs -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/1.jpeg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/2.jpeg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/3.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/4.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/5.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/6.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/7.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/8.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/10.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/11.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/12.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/13.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/14.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/15.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/16.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/17.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/18.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/19.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/20.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/21.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/24.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/Slider homepage photos/26.jpg" alt="">
-              </div>
+        <!-- image slider -->
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/10.jpg" alt="">
             </div>
-            <div class="swiper-pagination"></div>
-          </div> 
-    
-    
-          <!--image slider swiperjs script  -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-              effect: "coverflow",
-              grabCursor: true,
-              centeredSlides: true,
-              slidesPerView: "auto",
-              coverflowEffect: {
-                rotate: 10,
-                stretch: 0,
-                depth: 500,
-                modifier: 1,
-                slideShadows: true,
-              },
-            //   pagination: {
-            //     el: ".swiper-pagination",
-            //   },
-              loop:true,
-              autoplay:{
-              delay: 1000,
-              disableOnInteraction: false,
-            }
-            });
-          </script>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/11.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/4.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/5.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/6.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/7.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/8.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/15.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/20.jpg" alt="">
+            </div>
+            <!-- same doubled -->
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/10.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/11.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/4.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/5.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/6.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/7.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/8.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/15.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./assets/Slider homepage photos/20.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
     </header>
 
      <!-- categories -->
@@ -174,7 +135,7 @@
           <div class="gallery-col gallery-col1" onclick="location.href='fashion.html'"> 
               <div>
                 <hr>
-                <h3>FASHION</h3>
+                <h3>COMMERCIAL</h3>
                 <hr>
               </div>
           </div>
@@ -188,14 +149,14 @@
         <div class="gallery-col gallery-col3" onclick="location.href='product.html'">
           <div>
             <hr>
-            <h3>PRODUCT</h3>
+            <h3>FASHION</h3>
             <hr>
           </div>
       </div>
         <div class="gallery-col gallery-col4" onclick="location.href='portraits.html'">
           <div>
             <hr>
-            <h3>PORTRAITS</h3>
+            <h3>PRODUCT</h3>
             <hr>
           </div>
       </div>
@@ -209,7 +170,7 @@
         <div class="gallery-col gallery-col6" onclick="location.href='kids.html'">
           <div>
             <hr>
-            <h3>KIDS</h3>
+            <h3>FAMILY</h3>
             <hr>
           </div>
       </div>
