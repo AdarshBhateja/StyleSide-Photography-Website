@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
 </head>
@@ -26,7 +27,15 @@
                   <li><a href="./product.html">Product</a></li>
                   <li><a href="./beauty.html">Beauty</a></li>
                   <li><a href="./fashion.html">Fashion</a></li>
-                  <li><a href="#">More</a></li>
+                  
+                    <li id="more"><a href="#">More <i class="fa-solid fa-caret-down drop-down-arrow"></i></a>
+                      <ul class="drop-down-container">
+                        <li><a href="./e-commerce.html">E-Commerce</a></li>
+                        <li><a href="./wedding.html">Pre&#8209;Wedding & Wedding</a></li>
+                        <li><a href="./family.html">Family</a></li>
+                      </ul>
+                    </li>
+  
                   <li><a href="./contact.html">Contact</a></li>
                   <li><a href="./about.html">About</a></li>
                 </ul>
@@ -180,7 +189,7 @@
     <!--Homepage Reel Section -->
     <section class="reel-container">
       <div class="reel-sub-container">
-        <div class="reel-left"><video class="homepage-reel" autoplay controls>
+        <div class="reel-left"><video class="homepage-reel" controls>
           <source src="./assets/homepage reel/homepage_reel.mp4">
           Your browser does not support the video.
         </video></div>

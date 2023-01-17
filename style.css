@@ -15,6 +15,7 @@
 
 body{
     padding: 0 10px;
+    max-width: 1920px;
 }
 
 /* Nav */
@@ -75,12 +76,12 @@ li{
     font-weight: 600;
 }
 
-.nav-right-one ul li:hover{
+.nav-right-one>ul>li:hover{
     scale: 1.2;
     transition: .4s;
 }
 
-.nav-right-one ul li::after{
+.nav-right-one>ul>li::after{
     content: "";
     width: 0;
     height: 2px;
@@ -92,6 +93,47 @@ li{
 
 .nav-right-one ul li:hover::after{
     width: 100%;
+}
+
+.drop-down-arrow{
+    rotate: 180deg;
+    transition: 0.5s;
+}
+
+#more{
+    white-space: nowrap;
+}
+#more:hover .drop-down-arrow{
+    rotate: 360deg;
+    transition: 0.2s;
+}
+#more:hover{
+    scale: 1;
+}
+
+.drop-down-container{
+    position: absolute;
+    background-color: #f1f1f1;
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    display: none !important;
+}
+#more:hover .drop-down-container{
+    display: block !important;
+}
+
+.drop-down-container li a{
+    color: #474747e3;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: .4s;
+}
+.drop-down-container li a:hover{
+    scale: 1.1;
+    transition: .4s;
+    background-color: #BE9A64;
 }
 
 .fa-instagram{
