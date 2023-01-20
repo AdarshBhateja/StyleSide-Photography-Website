@@ -529,7 +529,7 @@ li{
 }
 
 @media(max-width: 1450px){
-    .gallery-col5 div h3,.gallery-col4 div h3{
+    .gallery-col5 div h3,.gallery-col4 div h3,.gallery-col1 div h3{
         font-size: 40px;
     }
 }
