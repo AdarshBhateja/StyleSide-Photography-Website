@@ -14,8 +14,11 @@
 }
 
 body{
-    padding: 0 10px;
+    padding: 0 5px;
     max-width: 1920px;
+    /* width: auto; */
+    overflow-x: hidden;
+    margin: auto;
 }
 
 /* Nav */
@@ -203,7 +206,7 @@ li{
     height: 70vh;
     margin: auto;
     position: relative;
-    /* width: 90%; */
+    /* width: 90vw; */
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -454,37 +457,37 @@ li{
 }
 
 .gallery-col1{
-    background: url("./assets/Slider homepage photos/1.jpg");
+    background: url("./assets/Data/Product/3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery-col2{
-    background: url("./assets/Slider homepage photos/20.jpg");
+    background: url("./assets/Data/Beauty/18.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery-col3{
-    background: url("./assets/Slider homepage photos/14.jpg");
+    background: url("./assets/Data/Fashion/7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery-col4{
-    background: url("./assets/Slider homepage photos/4.jpg");
+    background: url("./assets/Data/E-commerce/11.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery-col5{
-    background: url("./assets/Slider homepage photos/10.jpg");
+    background: url("./assets/Data/Wedding/17.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery-col6{
-    background: url("./assets/Slider homepage photos/12.jpg");
+    background: url("./assets/Data/Family/10.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -537,21 +540,79 @@ li{
 /* homepage reel section */
 .reel-container{
     background-color: #BE9A64;
-    width: 100vw;
-    height: 70vh;
-    max-height: 500px;
-    margin: 100px auto;
+    margin: 10% auto;
 }
 
 .reel-sub-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .homepage-reel{
     width: 500px;
     height: 500px;
+    margin-top: 10px;
+}
+
+.reel-right{
+    text-align: center;
+}
+
+.reel-right h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #2B2C27;
+    margin-bottom: 30px;
+    position: relative;
+    top: -50px;
+}
+
+.reel-right h2 a{
+    font-family: 'Times New Roman', Times, serif;    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: rgb(234, 204, 204);
+    display: inline-block;
+    background-color: black;
+    padding: 12px;
+    text-decoration: none;
+    position: relative;
+    top: -50px;
+    transition: .4s;
+}
+.reel-right h2 a:hover{
+    color: rgb(252, 244, 244);
+    transition: .4s;
+}
+
+@media(min-width: 801px) and (max-width: 930px){
+    .reel-right h1{
+        scale: .7;
+        margin-bottom: 0px;
+    }
+    .reel-right h2 a{
+        scale: .7;
+    }  
+}
+@media(max-width: 800px){
+    .reel-sub-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+    }
+    .reel-right h1{
+        scale: .7;
+        margin-bottom: 0px;
+    }
+    .reel-right h2 a{
+        scale: .7;
+    }
+    .homepage-reel{
+        margin-top: 20px;
+        width: auto;
+    }
 }
 
 /* footer */
